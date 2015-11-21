@@ -72,6 +72,31 @@ THE SOFTWARE.
 
   <script type="text/javascript">
 
+  function signNumber(hand) {
+      var number = undefined;
+      var extendedList = [];
+      var fingers = hand.fingers();
+
+      if (fingers.length == 5) {
+      fingers.forEach(function (finger) {
+        extendedList.push(finger.extended());
+      })
+
+      switch (extendedList) {
+        case [0,1,0,0,0]: number = 1; break;
+        case [0,1,1,0,0]: number = 2; break;
+        case [1,1,1,0,0]: number = 3; break;
+        case [0,1,1,1,1]: number = 4; break;
+        case [1,1,1,1,1]: number = 5; break;
+        case [0,1,1,1,0]: number = 6; break;
+        case [0,1,1,0,1]: number = 7; break;
+        case [0,1,0,1,1]: number = 8; break;
+        case [0,0,1,1,1]: number = 9; break;
+      }
+
+      return number;
+    }
+
 	/********************************************************
 	* This is the actual example part where we call pinchStrength
 	*****************************************************/
@@ -102,12 +127,17 @@ THE SOFTWARE.
         angle *= -1;
       }
 
-
-
       output_rad.innerHTML = (angle ).toPrecision(2) + ' rad';
       output_deg.innerHTML = (angle * TO_DEG).toPrecision(2) + '°';
 
       progress.style.width = angle * 100 + '%';
+
+      //Print sign number
+      var number = signNumber(hand);
+      if(number !== undefined) {
+        console.log(number);
+      }
+
 	}
   });
 
