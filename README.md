@@ -1,5 +1,5 @@
 
-This is was a hackaton project for Hack Pompey 21 November 2015. <br />
+This was a hackaton project for Hack Pompey 21 November 2015. <br />
 The hackaton was all about wearable technology. <br />
 http://hackpompey.co.uk/
 
