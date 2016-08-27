@@ -9,6 +9,13 @@ It uses Leap Motion to capture sign language and speakjs to translate text to sp
 
 Main application is located in speakjs/gesty.html
 
+## Signs
+Numbers: 1,2,3,4,5,6,7,8,9 <br />
+Letters: a,b,c,d,e,o
+
+## Status
+Proof of concept
+
 # Team members
 Mikael Ohlsson <br />
 Paul Renshaw <br />
