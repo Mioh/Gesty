@@ -1,6 +1,6 @@
 
-This is was a hackaton project for Hack Pompey 21 November 2015.
-The hackaton was all about wearable technology.
+This is was a hackaton project for Hack Pompey 21 November 2015. <br />
+The hackaton was all about wearable technology. <br />
 http://hackpompey.co.uk/
 
 # Gesty
@@ -10,5 +10,5 @@ It uses Leap Motion to capture sign language and speakjs to translate text to sp
 Main application is located in speakjs/gesty.html
 
 # Team members
-Mikael Ohlsson
-Paul Renshaw
+Mikael Ohlsson <br />
+Paul Renshaw <br />
